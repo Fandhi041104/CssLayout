@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Layout</title>
+
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: 20% 47% 35%;
+            background-color: aquamarine;
+            text-align: center;
+            border: 4px solid yellowgreen;
+            font-family: 'Franklin Gothic Medium';
+        }
+        .main > div {
+            border: 4px solid yellowgreen;
+            padding: 4%;
+        }
+        .header {
+            grid-column: 1/4;
+        }
+        .konten {
+            grid-row: 2/4;
+        }
+        .footer {
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            Header
+        </div>
+        <div class="konten">
+            Menu
+        </div>
+        <div>Main</div>
+        <div>Right</div>
+
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
